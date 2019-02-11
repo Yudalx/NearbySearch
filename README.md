@@ -95,7 +95,7 @@ curl -s "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=4
 curl -s "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=45.7701495,4.8517567&maxprice=0&radius=50000&key=AIzaSyCyOG34X2U6iKWgvwGmukiaBaVr3-PkNs4" | jq
 ```
 ***Ожидаемый результат:*** ответ 200 ok и JSON c параметром status=ZERO_RESULTS
-```
+
 2.  Проверка ответа сервиса в случае отсутствия обязательного параметра location
 ```
 curl -s "https://maps.googleapis.com/maps/api/place/nearbysearch/json?&radius=1&key=AIzaSyCyOG34X2U6iKWgvwGmukiaBaVr3-PkNs4" | jq
