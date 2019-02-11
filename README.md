@@ -1,6 +1,6 @@
 # Задание 2
 
-Объект тестирования - google api Метод ```/nearbysearch``` GET
+###Объект тестирования - google api Метод ```/nearbysearch``` GET
 
 Endpoint - ```https://maps.googleapis.com/maps/api/place``` 
 
@@ -8,7 +8,7 @@ Endpoint - ```https://maps.googleapis.com/maps/api/place```
 
 Все ответы будем принимать в json
 
-Цель тестирования - проверка работы сервиса для позитивных и негативных сценариев
+###Цель тестирования - проверка работы сервиса для позитивных и негативных сценариев
 
 Параметры метода nearbysearch 
 - key (requered) - ключ от апи
@@ -25,7 +25,7 @@ Endpoint - ```https://maps.googleapis.com/maps/api/place```
 - type - фильтрует места по указанному типу, пример "establishment"
 - pagetoken - токен по которому можно получить следующие 20 результатов поиска
 
-# Позитивные кейсы
+## Позитивные кейсы
 
 1.  Проверка работы сервиса с минимальным набором параметров с использованием radius: location, radius, key 
 	```
@@ -88,7 +88,7 @@ Endpoint - ```https://maps.googleapis.com/maps/api/place```
 	***Ождиаемый результат:*** ответ 200 ok и JSON c количеством мест в указанном радиусе данной точки и price_level=4
 
 
-# Негативные кейсы
+## Негативные кейсы
 
 1. Проверка работы сервиса в случае если мест по указанным параметрам не найдено maxprice=0
 	```
@@ -162,7 +162,7 @@ Endpoint - ```https://maps.googleapis.com/maps/api/place```
 	```
 	***Ожидаемый результат:*** ответ 200 ok и JSON c параметром status=INVALID_REQUEST
 
-# Не автоматизированные 
+## Не автоматизированные 
 1.  Проверка ответа сервиса в случае не валидного параметра key
 	```
 	curl -s "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=55.6372523,37.5203141&radius=25000&key=AIzaSyCyOG34X2U6iKWgvwGmukiaBaVr3-PkNs1" | jq
