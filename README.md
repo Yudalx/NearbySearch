@@ -1,6 +1,6 @@
 # Задание 2
 
-###Объект тестирования - google api Метод ```/nearbysearch``` GET
+### Объект тестирования - google api Метод ```/nearbysearch``` GET
 
 Endpoint - ```https://maps.googleapis.com/maps/api/place``` 
 
@@ -8,7 +8,7 @@ Endpoint - ```https://maps.googleapis.com/maps/api/place```
 
 Все ответы будем принимать в json
 
-###Цель тестирования - проверка работы сервиса для позитивных и негативных сценариев
+### Цель тестирования - проверка работы сервиса для позитивных и негативных сценариев
 
 Параметры метода nearbysearch 
 - key (requered) - ключ от апи
