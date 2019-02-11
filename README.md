@@ -1,18 +1,16 @@
 # Задание 2
 
-# Объект тестирования - google api 
+Объект тестирования - google api Метод ```/nearbysearch``` GET
 
 Endpoint - ```https://maps.googleapis.com/maps/api/place``` 
-
-Метод ```/nearbysearch``` GET
 
 Пример запроса ```https://maps.googleapis.com/maps/api/place/nearbysearch/output?parameters```
 
 Все ответы будем принимать в json
 
-# Цель тестирования - проверка работы сервиса для позитивных и негативных сценариев
+Цель тестирования - проверка работы сервиса для позитивных и негативных сценариев
 
-# Параметры метода nearbysearch 
+Параметры метода nearbysearch 
 - key (requered) - ключ от апи
 - location (requered) - координаты точки принимает два параметра в формате широта -latitude долгота - longitude, пример (55.6372523,37.5203141)
 - radius -  (requered if rankby=distance is not specified) - радиус вокруг указанной точки в метрах, принимает числовое значение от 1 до 50000
